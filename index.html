@@ -3,6 +3,9 @@
 <html>
     <head>
         <style>
+            .header {
+                align-content: center;
+            }
             .button1 {
                 background-color : lightcyan;
                 width: 15%;
@@ -11,19 +14,23 @@
             }
             .leftImg {
                 float: left;
+                -o-object-fit:cover;
             }
             .rightImg {
                 float: right;
+                -o-object-fit:cover;
             }
             .body {
                 padding: 5%;
                 align-content: center;
+                overflow: auto;
             }
+            
         </style>
     </head>
     <body>
         <p>I am seeking a software engineering internship for the summers of 2019 and 2020.</p>
-        <div>
+        <div class="header">
             <h1>Caleb Kinmon</h1>
             <p>
                 I'm an undergraduate studying computer science at Columbia University.
