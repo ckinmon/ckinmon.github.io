@@ -1,52 +1,39 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<html>
+<html lang="en">
     <head>
-        <style>
-            .header {
-                align-content: center;
-            }
-            .button1 {
-                background-color : lightcyan;
-                width: 15%;
-                height: 5%;
-                text-decoration: solid;
-                padding: 5%;
-            }
-            .leftImg {
-                float: left;
-                -o-object-fit:cover;
-            }
-            .rightImg {
-                float: right;
-                -o-object-fit:cover;
-            }
-            .body {
-                padding: 5%;
-                align-content: center;
-                overflow: auto;
-                height: 2%;
-            }
-            .text {
-                padding: 5%;
-            }
-            
-        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+
     </head>
     <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </nav>
         <p>I am seeking a software engineering internship for the summers of 2019 and 2020.</p>
         <div class="header">
-            <h1>Caleb Kinmon</h1>
+            <h1 class="header-h1">Caleb Kinmon</h1>
             <p>
                 I'm an undergraduate studying computer science at Columbia University.
             </p>
-            <img src="\images\profilepic.png" style="max-width:50%; max-height: 50%"/>
+            <img src="\images\profilepic.png" />
         </div>
         <div class="body">
-            <h1 style="align-content: center">About Caleb</h1>
-            <img src="\images\massievictory.jpg" class="leftImg" style="max-width:50%; max-height: 50%" />
+            <h1 class="header-h1">About Caleb</h1>
+            <img src="\images\massievictory.jpg" class="leftImg" />
             <p class="text">
-                <h2>Caleb's Professional Experience</h2>
+                <h2 class="subheader">Caleb's Professional Experience</h2>
                 After graduating from high school, I worked for two years as a project manager at a marketing firm outside of Washington, D.C. 
                 where my responsibilities included basic web development, such as creating, maintaining, and debugging landing pages for several 
                 high profile political clients.  I utilized...
@@ -54,9 +41,8 @@
             <button class="button1" onclick="redirect('\workhistory.html')">View Caleb's Work History</button>
         </div>
         <div class="body">
-            <img src="\images\columbia.jpg" class="rightImg" style="max-width:50%; max-height: 50%" />
-            <p class="text">
-                <h2>Caleb's Education</h2>
+            <img src="\images\columbia.jpg" class="rightImg" >
+                <h2 class="subheader">Caleb's Education</h2>
                 In 2018, I graduated with an Associate's in Science with an emphasis on Computer Science from Bluegrass Community and Technical 
                 College in Lexington, Kentucky.  I graduated with high distinction, achieving a 3.95 cumulative GPA, and made the Dean's List in 
                 the Spring '17, Fall '17, and Spring '18 semesters.  After graduating from BCTC, I transferred to Columbia University...
@@ -64,9 +50,9 @@
             <button class="button1" onclick="redirect('\education.html')">View Caleb's Education</button>
         </div>
         <div class="body">
-            <img src="\images\big-oh-graph.png" class="leftImg" style="max-width:50%; max-height: 50%" />
+            <img src="\images\big-oh-graph.png" class="leftImg" />
             <p class="text">
-                <h2>Caleb's Software Projects</h2>
+                <h2 class="subheader">Caleb's Software Projects</h2>
                 Most of my experience and projects are academic in nature. I have written several APIs and applications in Java, including a game 
                 that utilizes basic artificial intelligence techniques such that the computer player records the game history and identifies a human 
                 player's biases. During my free time...
@@ -74,14 +60,14 @@
             <button class="button1" onclick="redirect('\softwareprojects.html')">View Caleb's Projects</button>
         </div>
         <div class="body">
-            <img src="\images\christmas.jpeg" class="rightImg" style="max-width:50%; max-height: 50%" />
+            <img src="\images\christmas.jpeg" class="rightImg" />
             <p class="text">
-                <h2>Caleb's Background and Family</h2>
+                <h2 class="subheader">Caleb's Background and Family</h2>
                 I am a first generation college student and a non-traditional student, who is passionate about computer science -- specifically 3D UIs 
                 and AI -- mathematics, and commercial space exploration.  I am also the proud father of James Isaac Kinmon (2) and husband of Qarima Anbiya.  
                 My family and I enjoy traveling around the U.S. and exploring the outdoors.  During my free time...
             </p>
-            <button class="button1" onclick="redirect('\background.html')">View Caleb's Photos</button>
+            <button class="view-button" onclick="redirect('\background.html')">View Caleb's Photos</button>
         </div>
         <script>
             function redirect(url) {
@@ -90,9 +76,12 @@
         </script>
         <footer>
             <p>
-                Copyright © 2019 Caleb Kinmon - All Rights Reserved.
+                Copyright ï¿½ 2019 Caleb Kinmon - All Rights Reserved.
             </p>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
       
 </html>

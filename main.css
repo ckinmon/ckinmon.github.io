@@ -1,0 +1,28 @@
+
+.header {
+    align-content: center;
+}
+.button1 {
+    background-color : lightcyan;
+    width: 15%;
+    height: 5%;
+    text-decoration: solid;
+    padding: 5%;
+}
+.leftImg {
+    float: left;
+    -o-object-fit:cover;
+}
+.rightImg {
+    float: right;
+    -o-object-fit:cover;
+}
+.body {
+    padding: 5%;
+    align-content: center;
+    overflow: auto;
+    height: 2%;
+}
+.text {
+    padding: 5%;
+}
